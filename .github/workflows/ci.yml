@@ -27,8 +27,7 @@ jobs:
       fail-fast: false
       matrix:
         elixirbase:
-          - "1.11.0-erlang-23.1.1-alpine-3.13.1"
-          - "1.11.0-erlang-21.3.8.21-alpine-3.13.1"
+          - "1.9.4-erlang-22.3.4.16-alpine-3.13.1"
         postgres:
           - "11.11"
           - "9.6"
@@ -48,8 +47,7 @@ jobs:
       fail-fast: false
       matrix:
         elixirbase:
-          - "1.11.0-erlang-23.1.1-alpine-3.13.1"
-          - "1.11.0-erlang-21.3.8.21-alpine-3.13.1"
+          - "1.9.4-erlang-22.3.4.16-alpine-3.13.1"
         mysql:
           - "5.7"
     steps:
@@ -67,8 +65,7 @@ jobs:
       fail-fast: false
       matrix:
         elixirbase:
-          - "1.11.0-erlang-23.1.1-alpine-3.13.1"
-          - "1.11.0-erlang-21.3.8.21-alpine-3.13.1"
+          - "1.9.4-erlang-22.1.7-alpine-3.11.3"
         mssql:
           - "2017"
           - "2019"
