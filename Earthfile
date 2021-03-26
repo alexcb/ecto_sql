@@ -24,19 +24,16 @@ test:
 integration-test-all:
     ARG ELIXIR_BASE=1.11.0-erlang-23.1.1-alpine-3.13.1
     BUILD \
-        --build-arg ELIXIR_BASE=$ELIXIR_BASE \
         --build-arg POSTGRES=11.11 \
         --build-arg POSTGRES=9.6 \
         --build-arg POSTGRES=9.5 \
         +integration-test-postgres
 
     BUILD \
-        --build-arg ELIXIR_BASE=$ELIXIR_BASE \
         --build-arg MYSQL=5.7 \
         +integration-test-mysql
 
     BUILD \
-        --build-arg ELIXIR_BASE=$ELIXIR_BASE \
         --build-arg MSSQL=2017 \
         --build-arg MSSQL=2019 \
         +integration-test-mssql
